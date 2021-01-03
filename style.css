@@ -1,0 +1,159 @@
+*{margin: 0;
+}
+
+body{
+  background-color: blanchedalmond;
+}
+
+#header{
+  background-color: cornflowerblue;
+  margin: auto;
+}
+
+.square {
+    height: 90px;
+    width: 90px;
+    background-color: #555;
+    border-radius: 10px;;
+    
+  }
+  
+
+  .grid-container {
+    margin-top:20px ;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    gap: 20px 80px;
+    
+      
+  }
+
+  .text{
+    color: white;
+    text-align: center;;
+  }
+
+
+
+  /* followings are responsive screen media queries */
+  
+
+  /* mobile landscape query */
+
+  @media screen and (min-width:600px ) and (orientation: landscape){
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: auto auto;
+      gap: 20px 40px;
+      grid-template-areas:
+        ". . . . ."
+        ". . . . .";
+    }
+    
+    }
+
+      /* pixel2 res media query portrait */
+    @media screen and (min-width:400px ) and (orientation: portrait){
+
+      .square{
+        height: 100px;
+        width:100px;
+      }
+      .grid-item{
+        margin-bottom: 15px;
+      }
+    }
+
+
+  
+
+      /* ipad tablet portrait response query */
+    
+    @media screen and (min-width:700px ) and (orientation: portrait){
+
+      .square{
+        height: 150px;
+        width:150px;
+      }
+      .grid-item{
+        margin-bottom: 25px;
+      }
+      .text{
+        font-size: 180%;
+      }
+    }
+
+
+    /* mini tablets and phones lanscape query */
+    @media screen and (min-width:700px )and (orientation: landscape) {
+
+      .square{
+        height: 105px;
+        width:105px;
+      }
+      .grid-item{
+        margin-bottom: 5px;
+      }
+      .text{
+        font-size: 120%;
+      }
+    }
+
+
+
+/* tablets and mini laptops */
+    @media screen and (min-width:1000px ) and (orientation: landscape) {
+
+      .square{
+        height: 150px;
+        width:150px;
+      }
+      .grid-item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .text{
+        font-size: 150%;
+      }
+    }
+
+
+    /* laptops and desktops */
+    @media screen and (min-width:1300px ) and (orientation: landscape) {
+
+      .square{
+        height: 170px;
+        width:170px;
+      }
+      .grid-item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .text{
+        font-size: 160%;
+      }
+    }
+
+    /* response for led tv */
+    @media screen and (min-width:1400px ) and (orientation: landscape) {
+
+      .square{
+        height: 200px;
+        width:200px;
+      }
+      .grid-item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .text{
+        font-size: 180%;
+      }
+    }
+
+
+
+    
